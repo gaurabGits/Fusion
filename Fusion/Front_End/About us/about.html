@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us | Fusion</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>    
+    <header id="navbar"></header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fusion(Vo)</h1>
+            <p>It's an initial version where user can chat, video call with their connection. </p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Technology Stack</h2>
+                <p>The powerful technologies that make Fusion fast, reliable, and secure</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fab fa-react"></i>
+                    <h3>Frontend</h3>
+                    <p>React.js, WebRTC, Tailwind CSS</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend</h3>
+                    <p>Node.js, Socket.io, mangoDB</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Infrastructure</h3>
+                    <p>AWS</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Security</h3>
+                    <p>End-to-end encryption</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="section-title" id="contact">
+                <h2>Get In Touch</h2>
+                <p>Have questions about Fusion? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+
+    <script src="./about.js" type="module"></script>
+</body>
+</html>

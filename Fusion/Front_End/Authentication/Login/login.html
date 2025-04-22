@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Fusion</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img src="../../../Assets/media/logo.svg" alt="Fusion Logo" srcset="">
+            </div>
+            <div class="input-form">
+                <form action="#" method="post">
+                    <div class="user-info">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required placeholder="Enter your password">
+                        </div>
+                        
+                        <div class="show-pass">
+                            <input type="checkbox" name="show-password" id="show-password">
+                            <label for="show-password">Show Password</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Login <i class="fa-solid fa-circle-check" style="color: #ffffff; font-size: 14px; margin-left: 4px;"></i></button>
+                </form>
+                <div class="account-info">
+                    <div class="forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="#">Register</a> first</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <script src="login-style.js"></script>
+</body>
+</html>

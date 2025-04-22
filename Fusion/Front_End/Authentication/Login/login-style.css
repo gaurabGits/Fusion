@@ -1,0 +1,185 @@
+:root {
+    --primary: #0f0f0f;
+    --secondary: #ffffff;
+    --accent: #4285f4;
+    --text-primary: #0f0f0f;
+    --text-secondary: #ffffff;
+    --gray-light: #f5f5f5;
+    --gray-medium: #e0e0e0;
+    --gray-dark: #757575;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: var(--secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.logo {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.input-form {
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.user-info{
+    display: block;
+    margin-bottom: 3rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+input[type="email"]
+{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gray-medium);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+#password{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gray-medium);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+input[type="email"]:focus,
+#password:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.show-pass {
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    margin-left:  0.5rem;
+}
+
+.show-pass input[type="checkbox"] {
+    margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.show-pass label {
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary);
+    color: var(--text-secondary);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-bottom: 1.5rem;
+}
+
+.submit-btn:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-1px);
+}
+
+.account-info {
+    text-align: center;
+}
+
+.forgot-password {
+    margin-bottom: 1rem;
+}
+
+.forgot-password a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.register-link p {
+    color: var(--gray-dark);
+}
+
+.register-link a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+}
