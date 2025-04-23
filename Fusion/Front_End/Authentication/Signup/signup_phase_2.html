@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Step 2 | Fusion</title>
+    <title>Sign Up | Fusion</title>
     <link rel="stylesheet" href="signup-p2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 </head>
 <body>
     <main>
@@ -34,51 +36,15 @@
                         <input type="password" id="confirm-pass" class="password" placeholder="Re-Enter your password" required>
                     </div>
                 </div>       
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn">Submit <i class="fa-regular fa-circle-check" style="font-size: 14px; margin-left: 4px;"></i></button>
             </form>
             
             <div class="account-prompt">
-                <p>Already have an account? <a href="login.html">Login here</a></p>
+                <p>Already have an account? <a href="../Login/login.html">Login</a> Now</p>
             </div>
         </div>
     </main>
-    <script>
-        // Load data from previous page
-        document.addEventListener('DOMContentLoaded', function() {
-            const storedData = sessionStorage.getItem('signupData');
-            if (storedData) {
-                const formData = JSON.parse(storedData);
-                console.log('Previous form data:', formData);
-                // You could display this info or use it for verification
-            }
-        });
-
-        // Password show/hide toggle
-        document.getElementById('show-password').addEventListener('change', function() {
-            const passwordFields = document.querySelectorAll('.password');
-            passwordFields.forEach(field => {
-                field.type = this.checked ? 'text' : 'password';
-            });
-        });
-
-        // Form validation
-        document.getElementById('signupForm2').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const password = document.getElementById('password').value;
-            const confirmPass = document.getElementById('confirm-pass').value;
-            
-            if (password !== confirmPass) {
-                alert('Passwords do not match!');
-                return;
-            }
-            
-            // Form is valid - proceed with submission
-            alert('Registration successful!');
-            // Here you would typically send data to server
-            sessionStorage.removeItem('signupData'); // Clear stored data
-            window.location.href = 'welcome.html'; // Redirect to welcome page
-        });
+    <script src="signup.js">
     </script>
 </body>
 </html>

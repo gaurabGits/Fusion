@@ -182,13 +182,6 @@ nav {
   color: var(--text-light);
 }
 
-.hamburger{
-  color: var(--secondary-color);
-  font-size: 28px;
-  display: none;
-}
-
-
 /* main-container */
 main {
   display: flex;
@@ -288,83 +281,6 @@ main {
 }
 
 @media (max-width: 556px) {
-  .navbar {
-    position: relative;
-  }
-  
-  .navbar img {
-    width: 30px;
-    transition: transform 0.3s ease;
-  }
-
-  .nav-items {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 56px;
-    left: -50px;
-    width: 100%;
-    background: rgba(31, 31, 31, 0.95);
-    padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transform: translateX(-50px);
-    opacity: 0;
-    transition: all 0.3s ease;
-    z-index: 100;
-  }
-
-  .nav-items.active {
-    display: flex;
-    left: 0;
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  .nav-links ul {
-    width: 28rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .nav-links ul li, a {
-    width: 100%;
-    transition: all 0.5s ease-in;
-  }
-  .nav-links ul li:hover{
-    border-radius: 10px;
-    background-color: #5c5c5c83;
-  }
-
-  .nav-links ul li a {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 14px;
-    padding: 0.5rem 1rem;
-  }
-  
-  .nav-links ul li a::before{
-    display: none;
-  }
-  
-  .nav-btn div {
-    font-size: 14px;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-
-  .hamburger.active {
-    transform: rotate(90deg);
-  }
-
   .fusion-container h2 {
     font-size: 25px;
   }
