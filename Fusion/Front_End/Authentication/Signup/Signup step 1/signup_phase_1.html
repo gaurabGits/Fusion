@@ -10,21 +10,39 @@
 <body>
     <main>
         <div class="container">
-            <h2 class="form-title">Create account to register</h2>
-            <form class="signup-form">
+            <h2 class="form-title">Create your Account</h2>
+            <form class="signup-form" id="signupForm1">
                 <div class="form-group">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" placeholder="Enter your first name" required>
+                    <div class="input-container">
+                        <input type="text" id="firstName" placeholder="Enter your first name">
+                        <div class="error-message" id="firstNameError">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="form-group">
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" placeholder="Enter your last name" required>
+                    <div class="input-container">
+                        <input type="text" id="lastName" placeholder="Enter your last name">
+                        <div class="error-message" id="lastNameError">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username" required>
+                    <div class="input-container">
+                        <input type="text" id="username" placeholder="Enter your username">
+                        <div class="error-message" id="usernameError">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="form-group radio-group">
@@ -46,6 +64,10 @@
                             Not Specify
                         </label>
                     </div>
+                    <div class="error-message" id="genderError">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span></span>
+                    </div>
                 </div>
                 
                 <button type="submit" class="submit-btn">Next <i class="fa-solid fa-arrow-right-long" style="font-size: 14px; margin-left: 4px;"></i></button>
@@ -56,5 +78,7 @@
             </div>
         </div>
     </main>
+
+    <script src="validate-phase_1.js"></script>
 </body>
-</html> 
+</html>

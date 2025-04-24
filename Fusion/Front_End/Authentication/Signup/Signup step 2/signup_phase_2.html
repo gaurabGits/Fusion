@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="signup-p2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-</head>
 <body>
     <main>
         <div class="container">
@@ -15,14 +14,25 @@
             <form class="signup-form" id="signupForm2">
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <input type="email" id="email" placeholder="Enter your email address">
+                    <div class="error-message" id="emailError">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span></span>
+                    </div>
                 </div>
                 
                 <div class="form-group">
                     <div class="set-pass">
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" class="password" required placeholder="Set your password">
+                            <input type="password" name="password" id="password" class="password" placeholder="Set your password">
+                            <div class="error-message" id="passwordError">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span></span>
+                            </div>
+                            <div class="password-strength" id="passwordStrength">
+                                Password should be at least 8 characters
+                            </div>
                         </div>
                         
                         <div class="show-pass">
@@ -33,18 +43,22 @@
 
                     <div class="confirm-pass">
                         <label for="confirm-pass">Confirm Password</label>
-                        <input type="password" id="confirm-pass" class="password" placeholder="Re-Enter your password" required>
+                        <input type="password" id="confirm-pass" class="password" placeholder="Re-Enter your password">
+                        <div class="error-message" id="confirmPassError">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span></span>
+                        </div>
                     </div>
                 </div>       
                 <button type="submit" class="submit-btn">Submit <i class="fa-regular fa-circle-check" style="font-size: 14px; margin-left: 4px;"></i></button>
             </form>
             
             <div class="account-prompt">
-                <p>Already have an account? <a href="../Login/login.html">Login</a> Now</p>
+                <p>Already have an account? <a href="../../Login/login.html">Login</a> Now</p>
             </div>
         </div>
     </main>
-    <script src="signup.js">
-    </script>
+
+    <script src="../js/validate.js"></script>
 </body>
 </html>

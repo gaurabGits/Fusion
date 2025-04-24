@@ -289,8 +289,8 @@
                 </div>
     
                 <div class="nav-btn">
-                    <div class="btn login">Login</div>
-                    <div class="btn signup">Signup</div>
+                    <div class="btn login" id="login-btn">Login</div>
+                    <div class="btn signup" id="signup-btn">Signup</div>
                 </div>
             </div>
             <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
@@ -318,6 +318,17 @@
                 nav.classList.remove('active');
                 menuBtn.classList.remove('active');
             }
+        });
+
+        //Redirect in location
+        const login = document.getElementById("login-btn");
+        const signup = document.getElementById("signup-btn");
+
+        login.addEventListener('click', () => {
+            window.location.href = "../Authentication/Login/login.html";
+        });
+        signup.addEventListener('click', () => {
+            window.location.href = "../Authentication/Signup/signup_phase_1.html";
         });
     </script>      
 </body>
