@@ -1,3 +1,10 @@
+//back history
+document.getElementById('back-btn').addEventListener('click', () => {
+    window.history.back(); 
+    // window.location.href = "../Signup step 1/signup_phase_1.html"; 
+  });
+
+//for form validation
 document.addEventListener('DOMContentLoaded', function() {
     const signupForm = document.getElementById('signupForm2');
     const emailInput = document.getElementById('email');
@@ -10,6 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const passwordFields = document.querySelectorAll('.password');
         passwordFields.forEach(field => {
             field.type = this.checked ? 'text' : 'password';
+        });
+    });
+
+    // Live error removal
+    [emailInput, passwordInput, confirmPassInput].forEach(input => {
+        input.addEventListener('input', () => {
+            document.getElementById(input.id + 'Error')?.classList.remove('active');
+            input.classList.remove('input-error');
         });
     });
     
@@ -93,10 +108,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (password.length === 0) {
             strengthElement.textContent = 'Password should be at least 8 characters';
             strengthElement.style.color = 'var(--gray-dark)';
-        } else if (password.length < 4 ) {
+        } else if (password.length <= 4 ) {
             strengthElement.textContent = 'Password is too short';
             strengthElement.style.color = 'var(--error)';
-        } else if (password.length >= 6 && password.length < 10) {
+        } else if (password.length >4 && password.length < 10) {
             strengthElement.textContent = 'Password strength: Medium';
             strengthElement.style.color = '#FFA500';
         } else {

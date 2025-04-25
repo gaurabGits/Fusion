@@ -17,13 +17,25 @@
                 <form action="#" method="post">
                     <div class="user-info">
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required placeholder="Enter your email">
+                            <div class="input-wrapper">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="error-message" id="emailError">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span></span>
+                            </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" required placeholder="Enter your password">
+                            <div class="input-wrapper">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="Enter your password">
+                            </div>
+                            <div class="error-message" id="passwordError">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span></span>
+                            </div>
                         </div>
                         
                         <div class="show-pass">
@@ -41,9 +53,10 @@
                         <p>Don't have an account? <a href="../Signup/Signup step 1/signup_phase_1.html">Register</a> First</p>
                     </div>
                 </div>
+            </div>
         </div>
     </main>
 
-    <script src="login-style.js"></script>
+    <script src="login-script.js"></script>
 </body>
 </html>
